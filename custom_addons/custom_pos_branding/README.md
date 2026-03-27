@@ -6,8 +6,8 @@ This addon removes default POS branding elements (logos/titles) using safe templ
 
 1. Ensure compose mounts `../custom_addons` to `/mnt/extra-addons`.
 2. Redeploy Dokploy.
-3. In Odoo Apps, click `Update Apps List`.
-4. Search for `Custom POS Branding` and install it.
+3. In Odoo Apps, click `Update Apps List` once.
+4. The module auto-installs (no manual install click required).
 5. Hard-refresh POS browser tab (or clear service worker/cache) after installation.
 
 ## Notes

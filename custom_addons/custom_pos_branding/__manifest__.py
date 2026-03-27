@@ -14,6 +14,7 @@
             "custom_pos_branding/static/src/scss/branding_overrides.scss"
         ]
     },
+    "auto_install": True,
     "installable": True,
     "application": False,
     "license": "LGPL-3"
