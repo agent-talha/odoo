@@ -20,7 +20,10 @@ services:
       - odoo-internal
 
   odoo:
-    image: odoo:19.0
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile
+    image: agent-talha/odoo:19.0-custom
     container_name: odoo-app
     restart: unless-stopped
     depends_on:
@@ -33,9 +36,9 @@ services:
       PORT: 5432
       USER: ${POSTGRES_USER:-odoo}
       PASSWORD: ${POSTGRES_PASSWORD}
+    command: ["odoo", "--init=custom_pos_branding"]
     volumes:
       - odoo-web-data:/var/lib/odoo
-      - ../custom_addons:/mnt/extra-addons:ro
     networks:
       - odoo-internal
       - dokploy-network
