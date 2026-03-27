@@ -36,7 +36,6 @@ services:
     volumes:
       - ../files/odoo-data:/var/lib/odoo
       - ../files/extra-addons:/mnt/extra-addons
-      - ../files/odoo.conf:/etc/odoo/odoo.conf
     networks:
       - odoo-internal
       - dokploy-network
