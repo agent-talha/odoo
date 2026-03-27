@@ -10,9 +10,7 @@
                         <div class="timer-date" t-esc="time.date"> </div>
                     </div>
                 </div>
-                <div t-attf-class="screen-login-logo {{ ui.isSmall ? 'mx-auto' : 'ms-auto'}}">
-                    <img t-attf-src="/web/image?model=res.company&amp;id={{pos.company.id}}&amp;field=logo" alt="Logo"/>
-                </div>
+                <div t-attf-class="screen-login-logo {{ ui.isSmall ? 'mx-auto' : 'ms-auto'}}"/>
             </div>
             <div class="screen-login flex-grow-1 d-flex flex-column">
                 <div class="login-body d-flex flex-column flex-md-row gap-3 m-auto">

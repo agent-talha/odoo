@@ -3,8 +3,6 @@
 
     <t t-name="point_of_sale.SaleDetailsReport">
         <div class="pos-receipt">
-            <img t-attf-src="/web/image?model=res.company&amp;id={{pos.company.id}}&amp;field=logo" alt="Logo" class="pos-receipt-logo"/>
-            <br/>
             <br /><br />
 
             <div>

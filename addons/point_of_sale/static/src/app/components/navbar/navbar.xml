@@ -25,9 +25,6 @@
                     </button>
                 </div>
             </div>
-            <div t-if="!this.pos.getOrder()" class="pos-centerheader d-none d-xl-flex justify-content-center overflow-hidden">
-                <div class="pos-logo mw-100" />
-            </div>
             <div class="pos-rightheader flex-grow-1">
                 <div class="status-buttons d-flex flex-grow-1 align-items-center justify-content-end gap-1">
                     <div t-if="this.pos.data.network.offline or this.pos.data.network.loading" class="oe_status btn btn-light btn-lg lh-lg h-100 pe-none">

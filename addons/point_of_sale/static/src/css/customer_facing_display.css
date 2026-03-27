@@ -248,7 +248,7 @@ body .pos-customer_facing_display .pos-payment_info {
   justify-content: space-between;
 }
 body .pos-customer_facing_display .pos-company_logo {
-    background-image: url(/logo);
+    background-image: none;
     background-size: contain;
     background-repeat: no-repeat;
 }
