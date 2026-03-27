@@ -9,7 +9,7 @@ services:
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
       PGDATA: /var/lib/postgresql/data/pgdata
     volumes:
-      - ../files/postgres:/var/lib/postgresql/data/pgdata
+      - odoo-db-data:/var/lib/postgresql/data/pgdata
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-odoo} -d postgres"]
       interval: 10s
@@ -34,8 +34,8 @@ services:
       USER: ${POSTGRES_USER:-odoo}
       PASSWORD: ${POSTGRES_PASSWORD}
     volumes:
-      - ../files/odoo-data:/var/lib/odoo
-      - ../files/extra-addons:/mnt/extra-addons
+      - odoo-web-data:/var/lib/odoo
+      - odoo-extra-addons:/mnt/extra-addons
     networks:
       - odoo-internal
       - dokploy-network
@@ -53,3 +53,8 @@ networks:
     external: true
   odoo-internal:
     driver: bridge
+
+volumes:
+  odoo-db-data:
+  odoo-web-data:
+  odoo-extra-addons:
