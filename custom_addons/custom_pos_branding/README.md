@@ -1,6 +1,6 @@
 # Custom POS Branding
 
-This addon removes default POS branding elements (logos/titles) using safe template and CSS overrides.
+This addon removes default POS branding elements (logos/titles) using CSS overrides.
 
 ## Install
 

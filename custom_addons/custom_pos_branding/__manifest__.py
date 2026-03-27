@@ -10,7 +10,6 @@
     ],
     "assets": {
         "point_of_sale._assets_pos": [
-            "custom_pos_branding/static/src/xml/branding_overrides.xml",
             "custom_pos_branding/static/src/scss/branding_overrides.scss"
         ]
     },
