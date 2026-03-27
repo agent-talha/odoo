@@ -36,37 +36,9 @@ When a feature or product surface is added, removed, or materially repurposed, u
 The following user-facing Odoo branding was removed/replaced in POS and Self-Order UI:
 
 - "Powered by Odoo" blocks (receipt + customer display)
-- Odoo logo component usage on customer display
-- Odoo-branded page/app titles
-- Odoo fallback logo image in navbar/customer display CSS
-- Odoo-branded server error labels in POS popups
-- POS header/login/saver/report/receipt/customer-display logo render points removed
-
-### Main files updated for branding
-
-- `addons/point_of_sale/views/pos_assets_index.xml`
-- `addons/point_of_sale/static/src/app/main.js`
-- `addons/point_of_sale/static/src/app/screens/receipt_screen/receipt/order_receipt.xml`
-- `addons/point_of_sale/static/src/customer_display/customer_display.xml`
-- `addons/point_of_sale/static/src/customer_display/customer_display.js`
-- `addons/point_of_sale/static/src/app/utils/error_handlers.js`
-- `addons/point_of_sale/static/src/app/components/popups/cash_move_popup/cash_move_list_popup/cash_move_list_popup.js`
-- `addons/point_of_sale/static/src/app/components/navbar/navbar.scss`
-- `addons/point_of_sale/static/src/css/customer_facing_display.css`
-- `addons/pos_self_order/views/pos_self_order.index.xml`
-- `addons/point_of_sale/static/src/app/components/navbar/navbar.xml`
-- `addons/point_of_sale/static/src/app/screens/saver_screen/saver_screen.xml`
-- `addons/point_of_sale/static/src/app/screens/login_screen/login_screen.xml`
-- `addons/point_of_sale/static/src/app/screens/receipt_screen/receipt/receipt_header/receipt_header.xml`
-- `addons/point_of_sale/static/src/app/components/navbar/sale_details_button/sales_detail_report.xml`
-- `addons/point_of_sale/static/src/backend/lna_checklist/lna_checklist.xml`
-- `addons/point_of_sale/static/src/customer_display/customer_display_data_service.js`
-- `addons/point_of_sale/data/scenarios/clothes_data.xml`
-- `addons/pos_self_order/views/custom_link_views.xml`
-- `addons/pos_adyen/static/src/app/utils/payment/payment_adyen.js`
-- `addons/pos_razorpay/static/src/app/utls/payment/payment_razorpay.js`
-- `addons/pos_viva_com/static/src/app/payment_viva_com.js`
-- `addons/pos_glory_cash/static/src/utils/glory_xml.js`
+- POS logos and branding render points were removed where possible (header, login, saver, receipt, customer display, and related report views).
+- Odoo-branded page/app titles and user-facing branding strings were replaced with neutral wording where possible.
+- Branded placeholders/defaults in POS self-order and connector messages were neutralized where possible.
 
 ## Recent Relevant Commits
 
