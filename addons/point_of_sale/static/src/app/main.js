@@ -29,7 +29,7 @@ whenReady(() => {
     await whenReady();
     try {
         const app = await mountComponent(Chrome, document.body, {
-            name: "Odoo Point of Sale",
+            name: "Point of Sale",
             props: { disableLoader: () => (loader.isShown = false) },
         });
         window.addEventListener("beforeunload", function (event) {

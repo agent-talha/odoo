@@ -354,7 +354,7 @@ body .pos-customer_facing_display .pos-payment_info .pos-odoo_logo_container .lo
     height: max(min(min(2vh, 2vw), 2rem), .8rem);
     width: max(min(min(6vh, 6vw), 6rem), 2.6rem);
     margin-left: .3rem;
-    background-image: url(/web/static/img/logo_inverse_white_206px.png);
+    background-image: none;
     background-position: right top;
     background-size: contain;
     background-repeat: no-repeat;
@@ -365,7 +365,7 @@ body .pos-customer_facing_display .pos-payment_info .pos-odoo_logo_container spa
 }
 
 body .pos-customer_facing_display .pos-payment_info .pos-payment_info_details .pos-paymentlines::after {
-    height: 2vw; /* this empty element gives space between the paymentlines and the Odoo logo footer only if there is enough space (depending on the amount of paymentlines) */
+    height: 2vw; /* this empty element gives space between the payment lines and the footer if there is enough space */
     content: '';
     display: block;
     width: 100%;

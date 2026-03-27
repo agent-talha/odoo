@@ -1,5 +1,4 @@
 import { Component, useEffect, whenReady, useRef } from "@odoo/owl";
-import { OdooLogo } from "@point_of_sale/app/components/odoo_logo/odoo_logo";
 import { useSingleDialog } from "@point_of_sale/customer_display/utils";
 import { MainComponentsContainer } from "@web/core/main_components_container";
 import { session } from "@web/session";
@@ -10,7 +9,7 @@ import { CustomerFacingQR } from "./customer_facing_qr";
 
 export class CustomerDisplay extends Component {
     static template = "point_of_sale.CustomerDisplay";
-    static components = { OdooLogo, MainComponentsContainer, TagsList };
+    static components = { MainComponentsContainer, TagsList };
     static props = [];
 
     setup() {
