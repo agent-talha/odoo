@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="custom_pos_index_title" inherit_id="point_of_sale.index" name="POS Title Override">
+        <xpath expr="//head/title" position="replace">
+            <title>POS</title>
+        </xpath>
+    </template>
+
+    <template id="custom_customer_display_index_title" inherit_id="point_of_sale.customer_display_index" name="Customer Display Title Override">
+        <xpath expr="//head/title" position="replace">
+            <title>Customer Display</title>
+        </xpath>
+    </template>
+
+    <template id="custom_pos_daily_report_title" inherit_id="point_of_sale.pos_daily_sales_report_layout" name="POS Daily Report Title Override">
+        <xpath expr="//head/title" position="replace">
+            <title><t t-esc="title or 'Report'"/></title>
+        </xpath>
+    </template>
+</odoo>

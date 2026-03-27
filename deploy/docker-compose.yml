@@ -35,7 +35,7 @@ services:
       PASSWORD: ${POSTGRES_PASSWORD}
     volumes:
       - odoo-web-data:/var/lib/odoo
-      - odoo-extra-addons:/mnt/extra-addons
+      - ../custom_addons:/mnt/extra-addons:ro
     networks:
       - odoo-internal
       - dokploy-network
@@ -57,4 +57,3 @@ networks:
 volumes:
   odoo-db-data:
   odoo-web-data:
-  odoo-extra-addons:

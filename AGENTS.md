@@ -29,7 +29,12 @@ When a feature or product surface is added, removed, or materially repurposed, u
 - Current named volumes in compose:
   - `odoo-db-data`
   - `odoo-web-data`
-  - `odoo-extra-addons`
+- Custom addons are mounted from repo path `../custom_addons` to `/mnt/extra-addons` in Odoo container.
+
+## Customization Strategy
+
+- Prefer custom addons for POS branding and behavior changes instead of editing Odoo core files directly.
+- Current branding addon: `custom_pos_branding` (mounted through `custom_addons` and installed from Apps).
 
 ## POS Branding Customizations Implemented
 
